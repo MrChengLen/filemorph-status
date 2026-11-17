@@ -3,11 +3,15 @@
 owner: MrChengLen
 repo: filemorph-status
 
+# Own icons: without them the page loads site icons from a third-party
+# favicon service in every visitor's browser.
 sites:
   - name: FileMorph Website
     url: https://filemorph.io/
+    icon: https://filemorph.io/apple-touch-icon.png
   - name: FileMorph API
     url: https://filemorph.io/api/v1/health
+    icon: https://filemorph.io/apple-touch-icon.png
 
 assignees:
   - MrChengLen
@@ -26,7 +30,7 @@ status-website:
   introMessage: "Availability of [filemorph.io](https://filemorph.io), checked every 5 minutes from GitHub Actions. Outages open an issue in this repository automatically. · Verfügbarkeit von filemorph.io, alle 5 Minuten geprüft."
   navbar:
     - title: Status
-      href: /
+      href: /filemorph-status/
     - title: FileMorph
       href: https://filemorph.io/
     - title: Impressum
