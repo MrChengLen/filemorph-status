@@ -9,8 +9,12 @@ sites:
   - name: FileMorph Website
     url: https://filemorph.io/
     icon: https://filemorph.io/apple-touch-icon.png
+  # The readiness check also tests the database and the temp directory.
   - name: FileMorph API
-    url: https://filemorph.io/api/v1/health
+    url: https://filemorph.io/api/v1/ready
+    icon: https://filemorph.io/apple-touch-icon.png
+  - name: Upload API
+    url: https://api.filemorph.io/api/v1/ready
     icon: https://filemorph.io/apple-touch-icon.png
 
 assignees:
@@ -27,7 +31,7 @@ status-website:
   faviconSvg: https://filemorph.io/static/favicon.svg
   favicon: https://filemorph.io/apple-touch-icon.png
   introTitle: "**FileMorph** status"
-  introMessage: "Availability of [filemorph.io](https://filemorph.io), checked every 5 minutes from GitHub Actions. Outages open an issue in this repository automatically. · Verfügbarkeit von filemorph.io, alle 5 Minuten geprüft."
+  introMessage: "Availability of [filemorph.io](https://filemorph.io), checked about every 5 minutes from GitHub Actions. Outages open an issue in this repository automatically. · Verfügbarkeit von filemorph.io, etwa alle 5 Minuten geprüft."
   navbar:
     - title: Status
       href: /filemorph-status/
@@ -36,6 +40,6 @@ status-website:
     - title: Impressum
       href: https://filemorph.io/impressum
     - title: Datenschutz
-      href: https://filemorph.io/privacy
+      href: https://filemorph.io/privacy#status-page
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
